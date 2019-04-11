@@ -121,7 +121,7 @@ namespace rn
 
             Console.WriteLine($"-- Image files processed: {copier.fileCount()}");
             Console.WriteLine("-- done.");
-            Console.WriteLine(decorator);
+            Console.WriteLine($"{decorator}\n");
         }
     }
 }
