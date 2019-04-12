@@ -3,13 +3,13 @@ using System.IO;
 
 namespace rn
 {
-    /// This class finds the location of the images
-    /// It also does the copying of images into the newly created image directory
+    /// Finds the location of the images
+    /// Copy images into the newly created image directory
     class Copier
     {
         // These variables should not be public to avoid external modification.
         // This is where Windows 10 store login images
-        string assetsSegment = "\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets";
+        const string assetsSegment = "\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets";
         
         // Find the user directory
         string homePath = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
