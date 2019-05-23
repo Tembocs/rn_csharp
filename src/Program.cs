@@ -106,7 +106,7 @@ namespace rn
 
     class Program
     {
-        /// Staring point.
+        /// Starting point.
         static void Main(string[] args)
         {
             string decorator = new String('*', 50);
